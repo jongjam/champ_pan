@@ -18,7 +18,7 @@ export default class Champs extends Component {
     componentDidMount() {
         fetch("http://ddragon.leagueoflegends.com/cdn/10.23.1/data/en_US/champion.json")
         .then(response => 
-        this.setState({champions: response.data }));
+        this.setState({champions: response.champRawData }));
     }
 
     render() {
